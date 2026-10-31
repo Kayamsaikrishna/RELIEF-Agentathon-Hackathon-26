@@ -138,8 +138,17 @@ class Database:
         by_status = {r["status"]: r["n"] for r in self._q(f"SELECT status, COUNT(*) AS n FROM cases{w} GROUP BY status", a)}
         by_blocker = {r["main_blocker"]: r["n"] for r in self._q(
             f"SELECT main_blocker, COUNT(*) AS n FROM cases{w}{' AND' if w else ' WHERE'} main_blocker IS NOT NULL GROUP BY main_blocker", a)}
-        daily = self._q(f"SELECT substr(created_at,1,10) AS day, COUNT(*) AS n FROM cases{w} GROUP BY day ORDER BY day DESC LIMIT 14", a)
-        return {"total": sum(by_status.values()), "by_status": by_status, "by_blocker": by_blocker, "daily": list(reversed(daily))}
+        daily_rows = {r["day"]: r["n"] for r in self._q(f"SELECT substr(created_at,1,10) AS day, COUNT(*) AS n FROM cases{w} GROUP BY day ORDER BY day DESC LIMIT 14", a)}
+        if daily_rows:
+            try:
+                latest_date = datetime.fromisoformat(max(daily_rows.keys())).date()
+            except ValueError:
+                latest_date = datetime.now(timezone.utc).date()
+        else:
+            latest_date = datetime.now(timezone.utc).date()
+        days_window = [(latest_date - timedelta(days=i)).isoformat() for i in range(6, -1, -1)]
+        daily = [{"day": d, "n": daily_rows.get(d, 0)} for d in days_window]
+        return {"total": sum(by_status.values()), "by_status": by_status, "by_blocker": by_blocker, "daily": daily}
 
     def case_exists(self, case_id: str) -> bool:
         return bool(self._q("SELECT 1 FROM cases WHERE case_id=?", (case_id,)))
