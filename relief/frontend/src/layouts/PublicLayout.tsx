@@ -21,7 +21,6 @@ export default function PublicLayout() {
             {a("how", "How it works")}
             {a("safety", "Safety")}
             {a("posters", "In pictures")}
-            {a("rubric", "Rubric (50 pts)")}
             {a("faq", "FAQ")}
             <Link to="/safety" onClick={() => setOpen(false)}>Limits</Link>
           </nav>
