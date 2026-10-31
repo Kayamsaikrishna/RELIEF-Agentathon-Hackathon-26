@@ -1,0 +1,11 @@
+Other hospitals listed for {{ specialty }} in {{ state }} (to verify before the patient travels):
+
+{% for h in hospitals %}
+{{ loop.index }}. {{ h.name }}
+   Type: {{ h.type | title }} Facility  |  District: {{ h.district }}
+
+{% endfor %}
+Ranking: Same district first, then public hospitals. Check current empanelment and availability with each hospital before patient travels.
+{% if note %}
+Note: {{ note }}
+{% endif %}

@@ -1,0 +1,31 @@
+# Environments & Virtual Envs
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Relief app data & local databases
+relief/var/
+var/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.db
+.env
+
+# Frontend builds & dependencies
+node_modules/
+relief/frontend/node_modules/
+relief/frontend/dist/
+dist/
+
+# Scratch & logs
+scratch/
+relief/scratch/
+*.log

@@ -1,0 +1,517 @@
+[
+  {
+    "rule_id": "CAG-PREAUTH-12H",
+    "source_id": "CAG-11-2023",
+    "section": "Paragraph 5.1.3",
+    "page": "36",
+    "quote": "39.57 lakh claims took more than the specified time of 12 hours in approval of pre-authorisation.",
+    "text": "The CAG performance audit reports that 39.57 lakh claims took longer than the specified 12 hours for pre-authorisation approval. This is a measure of delay, not of denial.",
+    "applies_to": [
+      "ESCALATION_ONLY",
+      "FORMS"
+    ],
+    "anchors": [
+      "39.57 lakh claims took more than the specified time of 12 hours in approval of pre-authorisation."
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "HBP-PREAUTH-REQUIRED",
+    "source_id": "HBP-2.2",
+    "section": "Section 4.2(i)",
+    "page": "36",
+    "quote": "Packages are defined which require pre-authorization from the insurance company / trust before they can be administered.",
+    "text": "Some packages must be pre-authorised by the insurance company or trust before treatment is given.",
+    "applies_to": [
+      "FORMS"
+    ],
+    "anchors": [
+      "Packages are defined which require pre-authorization from the insurance company / trust before they can be administered."
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "HBP-DOCS-VARY",
+    "source_id": "HBP-2.2",
+    "section": "Section 4.2(iii)",
+    "page": "36",
+    "quote": "The documents needed may vary from package to package",
+    "text": "The documents needed for pre-authorisation differ from package to package, so completeness must be checked against the specific package.",
+    "applies_to": [
+      "FORMS"
+    ],
+    "anchors": [
+      "The documents needed may vary from package to package"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "HBP-PREAUTH-6H",
+    "source_id": "HBP-2.2",
+    "section": "Section 4.2(vi)",
+    "page": "36",
+    "quote": "The insurance company/ trust will have to approve or reject the request latest by 6 hours.",
+    "text": "The insurance company or trust is expected to approve or reject a pre-authorisation request within 6 hours (HBP 2.2, November 2021).",
+    "applies_to": [
+      "ESCALATION_ONLY",
+      "FORMS"
+    ],
+    "anchors": [
+      "The insurance company/ trust will have to approve or reject the request latest by 6 hours."
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "HBP-CASHLESS",
+    "source_id": "HBP-2.2",
+    "section": "Section 1.3",
+    "page": "7",
+    "quote": "AB PM-JAY is a cashless scheme, where no beneficiary should be made to pay for availing treatment in any EHCP.",
+    "text": "AB PM-JAY is a cashless scheme: a beneficiary should not be made to pay for treatment at an empanelled hospital.",
+    "applies_to": [
+      "IMPROPER_CHARGE"
+    ],
+    "anchors": [
+      "AB PM-JAY is a cashless scheme, where no beneficiary should be made to pay for availing treatment in any EHCP."
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "HBP-ADVANCE-DISCLOSURE",
+    "source_id": "HBP-2.2",
+    "section": "Section 1.3",
+    "page": "7",
+    "quote": "Beneficiary and SHA (through ISA/TPA) will need to be clearly communicated in advance about the additional payment",
+    "text": "Where an additional payment applies, the beneficiary and the State Health Agency must be told clearly in advance.",
+    "applies_to": [
+      "IMPROPER_CHARGE"
+    ],
+    "anchors": [
+      "Beneficiary and SHA (through ISA/TPA) will need to be clearly communicated in advance about the additional payment"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "HBP-SPECIALTY-EMPANELMENT",
+    "source_id": "HBP-2.2",
+    "section": "Section 4.1(i)",
+    "page": "35",
+    "quote": "Hospitals will only be allowed to view and apply treatment package for the specialty for which they are empanelled.",
+    "text": "A hospital can apply for treatment packages only in the specialties for which it is empanelled.",
+    "applies_to": [
+      "EMPANELMENT"
+    ],
+    "anchors": [
+      "Hospitals will only be allowed to view and apply treatment package for the specialty for which they are empanelled."
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "HBP-RESERVED-PUBLIC",
+    "source_id": "HBP-2.2",
+    "section": "Section 1.3",
+    "page": "7",
+    "quote": "will only be reserved for Public EHCPs as decided by NHA",
+    "text": "Some packages are reserved for public empanelled hospitals, as decided by the NHA.",
+    "applies_to": [
+      "EMPANELMENT",
+      "REFERRAL"
+    ],
+    "anchors": [
+      "will only be reserved for Public EHCPs as decided by NHA"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "HBP-RESERVED-REFERRAL",
+    "source_id": "HBP-2.2",
+    "section": "Section 4.1(vi)",
+    "page": "35",
+    "quote": "They can be availed in Private EHCPs only after a referral from a Public EHCP is made.",
+    "text": "Packages reserved for public hospitals can be availed at a private empanelled hospital only after a referral from a public empanelled hospital.",
+    "applies_to": [
+      "REFERRAL"
+    ],
+    "anchors": [
+      "They can be availed in Private EHCPs only after a referral from a Public EHCP is made."
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "HBP-BOOKING-NOT-AUTH",
+    "source_id": "HBP-2.2",
+    "section": "Section 2.2.4",
+    "page": "19",
+    "quote": "does not automatically privilege the hospital to perform a procedure",
+    "text": "Being able to book a package does not by itself authorise a hospital to perform the procedure.",
+    "applies_to": [
+      "EMPANELMENT"
+    ],
+    "anchors": [
+      "does not automatically privilege the hospital to perform a procedure"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "OPS-NO-CHARGE",
+    "source_id": "OPS-MANUAL-2022",
+    "section": "Annexure 1 (Don'ts)",
+    "page": "31",
+    "quote": "Charge from the beneficiaries in any form",
+    "text": "The operation manual lists charging beneficiaries in any form among the things empanelled hospitals must not do.",
+    "applies_to": [
+      "IMPROPER_CHARGE"
+    ],
+    "anchors": [
+      "Charge from the beneficiaries in any form"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "OPS-NO-FOLLOWUP-CHARGE",
+    "source_id": "OPS-MANUAL-2022",
+    "section": "Annexure 1 (Don'ts)",
+    "page": "32",
+    "quote": "Collect any amount towards follow-up consultation & medicines",
+    "text": "Hospitals must not collect money for follow-up consultation and medicines that the package covers.",
+    "applies_to": [
+      "IMPROPER_CHARGE"
+    ],
+    "anchors": [
+      "Collect any amount towards follow-up consultation & medicines"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "OPS-BIS-DOCUMENTS",
+    "source_id": "OPS-MANUAL-2022",
+    "section": "Section 7 (Beneficiary Identification System)",
+    "page": "20",
+    "quote": "Aadhaar (or an alternative government ID) and Ration Card (or an alternative family ID) is collected",
+    "text": "At identification, an Aadhaar or alternative government ID and a ration card or alternative family ID are collected and matched.",
+    "applies_to": [
+      "ENTITLEMENT",
+      "LINKAGE"
+    ],
+    "anchors": [
+      "Aadhaar (or an alternative government ID) and Ration Card (or an alternative family ID) is collected"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "OPS-PREAUTH-STEPS",
+    "source_id": "OPS-MANUAL-2022",
+    "section": "Section 9 (TMS workflow)",
+    "page": "23",
+    "quote": "Pre-auth panel doctor approves, rejects or can raise query to the PMAM.",
+    "text": "A pre-authorisation request is approved, rejected, or sent back with a query to the Arogya Mitra (PMAM); treatment starts after approval.",
+    "applies_to": [
+      "FORMS",
+      "ESCALATION_ONLY"
+    ],
+    "anchors": [
+      "Pre-auth panel doctor approves, rejects or can raise query to the PMAM."
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "OPS-CLAIM-24H",
+    "source_id": "OPS-MANUAL-2022",
+    "section": "Section III",
+    "page": "7",
+    "quote": "The EHCPs are expected to upload all claim-related documents within 24 hours of discharge",
+    "text": "Empanelled hospitals are expected to upload all claim-related documents within 24 hours of discharge.",
+    "applies_to": [
+      "FORMS"
+    ],
+    "anchors": [
+      "The EHCPs are expected to upload all claim-related documents within 24 hours of discharge"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "OPS-GRIEVANCE-PORTAL",
+    "source_id": "OPS-MANUAL-2022",
+    "section": "Section 11.2",
+    "page": "27",
+    "quote": "anyone can lodge a complaint or grievance on the portal",
+    "text": "Anyone can lodge a complaint or grievance on the PM-JAY grievance portal; the helpline 14555 is also listed in the operation manual.",
+    "applies_to": [
+      "ESCALATION_ONLY",
+      "IMPROPER_CHARGE"
+    ],
+    "anchors": [
+      "anyone can lodge a complaint or grievance on the portal",
+      "14555"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "OPS-PMAM-ROLE",
+    "source_id": "OPS-MANUAL-2022",
+    "section": "Section 9 (TMS)",
+    "page": "22",
+    "quote": "TMS enables PMAM to register beneficiaries for availing treatment in the hospital",
+    "text": "The Arogya Mitra (PMAM) registers beneficiaries, raises pre-authorisation requests and files treatment details and claims in the Transaction Management System (TMS).",
+    "applies_to": [
+      "FORMS"
+    ],
+    "anchors": [
+      "TMS enables PMAM to register beneficiaries for availing treatment in the hospital"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "WHO-2A-GOVERNMENT",
+    "source_id": "WHO-KA-ORS-2025",
+    "section": "Section 3.3",
+    "page": "",
+    "quote": "2A procedures can be provided only in government hospitals.",
+    "text": "In Karnataka, simple secondary (tier 2A) procedures can be provided only in government hospitals.",
+    "applies_to": [
+      "EMPANELMENT"
+    ],
+    "anchors": [
+      "2A procedures can be provided only in government hospitals."
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "WHO-2B3A-REFERRAL",
+    "source_id": "WHO-KA-ORS-2025",
+    "section": "Section 3.3",
+    "page": "",
+    "quote": "2B and 3A procedures should be provided preferentially in government hospitals.",
+    "text": "In Karnataka, complex secondary (2B) and tertiary (3A) procedures are routed through the referral system and should be provided preferentially in government hospitals.",
+    "applies_to": [
+      "REFERRAL"
+    ],
+    "anchors": [
+      "2B and 3A procedures should be provided preferentially in government hospitals."
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "WHO-4A-NO-REFERRAL",
+    "source_id": "WHO-KA-ORS-2025",
+    "section": "Section 3.3",
+    "page": "",
+    "quote": "There are a further 171 emergency procedures which require no referral",
+    "text": "In Karnataka, emergency (tier 4A) procedures do not require a referral.",
+    "applies_to": [
+      "REFERRAL"
+    ],
+    "anchors": [
+      "There are a further 171 emergency procedures which require no referral"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "WHO-EMERGENCY-DIRECT",
+    "source_id": "WHO-KA-ORS-2025",
+    "section": "Section 3.3",
+    "page": "",
+    "quote": "they can directly go to a public or private facility and receive the required services",
+    "text": "In an accident or emergency, a patient can go directly to a public or private facility without a referral letter.",
+    "applies_to": [
+      "REFERRAL"
+    ],
+    "anchors": [
+      "they can directly go to a public or private facility and receive the required services"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "WHO-REFERRAL-VALID-30D",
+    "source_id": "WHO-KA-ORS-2025",
+    "section": "Section 3.4",
+    "page": "",
+    "quote": "The referral letter has a validity of 30 days from the date of referral",
+    "text": "A referral letter issued through the Karnataka online referral system is valid for 30 days from the date of referral.",
+    "applies_to": [
+      "REFERRAL"
+    ],
+    "anchors": [
+      "The referral letter has a validity of 30 days from the date of referral"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "WHO-REFERRAL-NODAL-OFFICER",
+    "source_id": "WHO-KA-ORS-2025",
+    "section": "Section 3.4",
+    "page": "",
+    "quote": "The Nodal Officer must log into the ORS portal with his/her biometric verification",
+    "text": "Each referral is approved by a Nodal Officer in the online referral portal, who then prints, stamps and signs the letter.",
+    "applies_to": [
+      "REFERRAL"
+    ],
+    "anchors": [
+      "The Nodal Officer must log into the ORS portal with his/her biometric verification"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "WHO-REFERRAL-LIST-50KM",
+    "source_id": "WHO-KA-ORS-2025",
+    "section": "Section 3.3",
+    "page": "",
+    "quote": "ranked according to physical proximity within a 50km radius",
+    "text": "The referral system lists receiving hospitals ranked by physical proximity within a 50 km radius of the patient's registered residence.",
+    "applies_to": [
+      "REFERRAL",
+      "EMPANELMENT"
+    ],
+    "anchors": [
+      "ranked according to physical proximity within a 50km radius"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "WHO-RETROSPECTIVE-REFERRAL",
+    "source_id": "WHO-KA-ORS-2025",
+    "section": "Section 4.3",
+    "page": "",
+    "quote": "the practice of retrospective referral persists",
+    "text": "The study lists retrospective referrals as not allowed under the online referral system but reports that the practice persists.",
+    "applies_to": [
+      "REFERRAL"
+    ],
+    "anchors": [
+      "the practice of retrospective referral persists"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "GRV-LEVELS",
+    "source_id": "NHA-GRIEVANCE-2021",
+    "section": "Grievance levels",
+    "page": "",
+    "quote": "",
+    "text": "PM-JAY grievances are handled at district level (District Grievance Nodal Officer and committee), then state level (State Grievance Nodal Officer and committee), then a State Appellate Authority.",
+    "applies_to": [
+      "ESCALATION_ONLY",
+      "IMPROPER_CHARGE"
+    ],
+    "anchors": [
+      "DGNO",
+      "DGRC",
+      "SGRC",
+      "Appellate"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "GRV-SOS-6H",
+    "source_id": "NHA-GRIEVANCE-2021",
+    "section": "Timelines",
+    "page": "",
+    "quote": "",
+    "text": "Emergency (SOS) grievances are handled by the State Grievance Nodal Officer within 6 working hours.",
+    "applies_to": [
+      "ESCALATION_ONLY"
+    ],
+    "anchors": [
+      "SOS",
+      "6 working hours"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "GRV-NONSOS-15D",
+    "source_id": "NHA-GRIEVANCE-2021",
+    "section": "Timelines",
+    "page": "",
+    "quote": "",
+    "text": "For non-emergency grievances, the District Grievance Nodal Officer has 15 days; if no action is taken in 15 days the case moves to the State Grievance Nodal Officer.",
+    "applies_to": [
+      "ESCALATION_ONLY",
+      "IMPROPER_CHARGE"
+    ],
+    "anchors": [
+      "15 days",
+      "SGNO"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "GRV-CHANNELS",
+    "source_id": "NHA-GRIEVANCE-2021",
+    "section": "Channels",
+    "page": "",
+    "quote": "",
+    "text": "Grievances can be filed on the CGRMS portal or through the PM-JAY call centre helpline 14555; each grievance gets a unique grievance number for tracking.",
+    "applies_to": [
+      "ESCALATION_ONLY",
+      "IMPROPER_CHARGE"
+    ],
+    "anchors": [
+      "14555",
+      "Unique Grievance Number"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "PMJAY-FLOW-PREAUTH-6H",
+    "source_id": "PMJAY-FLOW-2019",
+    "section": "Step 4 (Pre-authorization)",
+    "page": "",
+    "quote": "",
+    "text": "The 2019 process flow states that for packages needing pre-authorisation the insurer or trust approves within a maximum of 6 hours, and that the Arogya Mitra uploads the package and documents on TMS.",
+    "applies_to": [
+      "ESCALATION_ONLY",
+      "FORMS"
+    ],
+    "anchors": [
+      "6 hours",
+      "TMS"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  },
+  {
+    "rule_id": "PMJAY-FLOW-ELIGIBILITY",
+    "source_id": "PMJAY-FLOW-2019",
+    "section": "Step 1 (Identification)",
+    "page": "",
+    "quote": "",
+    "text": "A patient can check eligibility at the hospital registration desk, the PM-JAY kiosk, the call centre 14555, or the Am I Eligible app or website.",
+    "applies_to": [
+      "ENTITLEMENT"
+    ],
+    "anchors": [
+      "14555"
+    ],
+    "quote_checked": false,
+    "needs_human_review": true
+  }
+]

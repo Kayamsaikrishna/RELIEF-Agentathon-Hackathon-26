@@ -1,0 +1,771 @@
+{
+  "version": "NHA-HBP-2026.1",
+  "synthetic": true,
+  "note": "Official NHA Health Benefit Package 2.2 and Empanelled Hospital Registry.",
+  "packages": [
+    {
+      "code": "NHA-OPH-001",
+      "name": "Cataract surgery with intraocular lens",
+      "specialty": "Ophthalmology",
+      "tier": "2A",
+      "reserved_for_public": true,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card",
+        "diagnostic_report"
+      ]
+    },
+    {
+      "code": "NHA-GSU-003",
+      "name": "Wound debridement (minor)",
+      "specialty": "General Surgery",
+      "tier": "2A",
+      "reserved_for_public": true,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card"
+      ]
+    },
+    {
+      "code": "NHA-GSU-001",
+      "name": "Appendectomy",
+      "specialty": "General Surgery",
+      "tier": "2B",
+      "reserved_for_public": false,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card",
+        "diagnostic_report"
+      ]
+    },
+    {
+      "code": "NHA-GSU-002",
+      "name": "Inguinal hernia repair",
+      "specialty": "General Surgery",
+      "tier": "2B",
+      "reserved_for_public": false,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card",
+        "diagnostic_report"
+      ]
+    },
+    {
+      "code": "NHA-OBG-001",
+      "name": "Caesarean section",
+      "specialty": "Obstetrics and Gynaecology",
+      "tier": "2B",
+      "reserved_for_public": true,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card",
+        "diagnostic_report"
+      ]
+    },
+    {
+      "code": "NHA-NEP-001",
+      "name": "Haemodialysis (per session)",
+      "specialty": "Nephrology",
+      "tier": "2B",
+      "reserved_for_public": false,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card",
+        "diagnostic_report"
+      ]
+    },
+    {
+      "code": "NHA-MED-001",
+      "name": "Pneumonia, inpatient management",
+      "specialty": "General Medicine",
+      "tier": "2B",
+      "reserved_for_public": false,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card",
+        "diagnostic_report"
+      ]
+    },
+    {
+      "code": "NHA-ORT-001",
+      "name": "Total knee replacement",
+      "specialty": "Orthopaedics",
+      "tier": "3A",
+      "reserved_for_public": false,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card",
+        "diagnostic_report"
+      ]
+    },
+    {
+      "code": "NHA-CAR-001",
+      "name": "Percutaneous coronary intervention",
+      "specialty": "Cardiology",
+      "tier": "3A",
+      "reserved_for_public": false,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card",
+        "diagnostic_report"
+      ]
+    },
+    {
+      "code": "NHA-ONC-001",
+      "name": "Chemotherapy cycle",
+      "specialty": "Oncology",
+      "tier": "3A",
+      "reserved_for_public": false,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card",
+        "diagnostic_report"
+      ]
+    },
+    {
+      "code": "NHA-ORT-002",
+      "name": "Long-bone fracture fixation (emergency)",
+      "specialty": "Orthopaedics",
+      "tier": "4A",
+      "reserved_for_public": false,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card"
+      ]
+    },
+    {
+      "code": "NHA-CAR-002",
+      "name": "Acute coronary syndrome, emergency management",
+      "specialty": "Cardiology",
+      "tier": "4A",
+      "reserved_for_public": false,
+      "required_docs": [
+        "preauth_form",
+        "clinical_notes",
+        "id_proof",
+        "card"
+      ]
+    }
+  ],
+  "hospitals": [
+    {
+      "hospital_id": "H-001",
+      "name": "District Hospital, Tumakuru (Govt)",
+      "type": "public",
+      "state": "Karnataka",
+      "district": "Tumakuru",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Obstetrics and Gynaecology",
+        "Ophthalmology",
+        "Nephrology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-002",
+      "name": "Taluk General Hospital, Sira (Govt)",
+      "type": "public",
+      "state": "Karnataka",
+      "district": "Tumakuru",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Obstetrics and Gynaecology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-003",
+      "name": "Bangalore Medical College & Research Institute (BMCRI)",
+      "type": "public",
+      "state": "Karnataka",
+      "district": "Bengaluru Urban",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Obstetrics and Gynaecology",
+        "Ophthalmology",
+        "Nephrology",
+        "Cardiology",
+        "Oncology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-004",
+      "name": "Narayana Institute of Cardiac Sciences, Bengaluru",
+      "type": "private",
+      "state": "Karnataka",
+      "district": "Bengaluru Urban",
+      "specialties": [
+        "Cardiology",
+        "General Medicine"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-005",
+      "name": "Siddhartha Medical College & Hospital, Tumakuru (Empanelled)",
+      "type": "private",
+      "state": "Karnataka",
+      "district": "Tumakuru",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Obstetrics and Gynaecology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-006",
+      "name": "Minto Ophthalmic Hospital, Mysuru",
+      "type": "private",
+      "state": "Karnataka",
+      "district": "Mysuru",
+      "specialties": [
+        "Ophthalmology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-007",
+      "name": "K.R. Hospital & Mysore Medical College (Govt)",
+      "type": "public",
+      "state": "Karnataka",
+      "district": "Mysuru",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Obstetrics and Gynaecology",
+        "Ophthalmology",
+        "Nephrology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-008",
+      "name": "Kidwai Memorial Institute of Oncology, Bengaluru",
+      "type": "private",
+      "state": "Karnataka",
+      "district": "Bengaluru Urban",
+      "specialties": [
+        "Oncology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-009",
+      "name": "KLE Suchirayu Hospital, Belagavi (Empanelled)",
+      "type": "private",
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "specialties": [
+        "Nephrology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-010",
+      "name": "District Hospital (BIMS), Belagavi (Govt)",
+      "type": "public",
+      "state": "Karnataka",
+      "district": "Belagavi",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Obstetrics and Gynaecology",
+        "Ophthalmology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-011",
+      "name": "SDM College of Medical Sciences & Hospital, Hubballi",
+      "type": "private",
+      "state": "Karnataka",
+      "district": "Dharwad",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics"
+      ],
+      "empanelment_active": false
+    },
+    {
+      "hospital_id": "H-012",
+      "name": "Apollo BGS Hospital, Mysuru (Empanelled)",
+      "type": "private",
+      "state": "Karnataka",
+      "district": "Mysuru",
+      "specialties": [
+        "Orthopaedics"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-101",
+      "name": "Government General Hospital (GGH), Vijayawada",
+      "type": "public",
+      "state": "Andhra Pradesh",
+      "district": "Krishna",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Nephrology",
+        "Obstetrics and Gynaecology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-102",
+      "name": "King George Hospital (KGH) & Andhra Medical College, Visakhapatnam",
+      "type": "public",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Oncology",
+        "Ophthalmology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-103",
+      "name": "Sri Venkateswara Institute of Medical Sciences (SVIMS), Tirupati",
+      "type": "public",
+      "state": "Andhra Pradesh",
+      "district": "Tirupati",
+      "specialties": [
+        "Cardiology",
+        "Nephrology",
+        "Oncology",
+        "General Surgery",
+        "Orthopaedics"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-104",
+      "name": "Apollo Hospitals, Health City, Visakhapatnam (Empanelled)",
+      "type": "private",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "specialties": [
+        "Cardiology",
+        "Orthopaedics",
+        "General Surgery"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-105",
+      "name": "Manipal Hospital, Tadepalli, Vijayawada (Empanelled)",
+      "type": "private",
+      "state": "Andhra Pradesh",
+      "district": "Guntur",
+      "specialties": [
+        "Cardiology",
+        "Oncology",
+        "Orthopaedics",
+        "General Surgery"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-106",
+      "name": "KIMS ICON Hospital, Sheela Nagar, Visakhapatnam",
+      "type": "private",
+      "state": "Andhra Pradesh",
+      "district": "Visakhapatnam",
+      "specialties": [
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-201",
+      "name": "KEM Hospital & Seth GS Medical College, Parel, Mumbai",
+      "type": "public",
+      "state": "Maharashtra",
+      "district": "Mumbai City",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Nephrology",
+        "Oncology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-202",
+      "name": "Sassoon General Hospital & B.J. Govt Medical College, Pune",
+      "type": "public",
+      "state": "Maharashtra",
+      "district": "Pune",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Ophthalmology",
+        "Obstetrics and Gynaecology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-203",
+      "name": "Government Medical College & Hospital (GMCH), Nagpur",
+      "type": "public",
+      "state": "Maharashtra",
+      "district": "Nagpur",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Oncology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-204",
+      "name": "Lilavati Hospital & Research Centre, Bandra, Mumbai (Empanelled)",
+      "type": "private",
+      "state": "Maharashtra",
+      "district": "Mumbai Suburban",
+      "specialties": [
+        "Cardiology",
+        "Oncology",
+        "Orthopaedics",
+        "General Surgery"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-205",
+      "name": "Ruby Hall Clinic, Sassoon Road, Pune (Empanelled)",
+      "type": "private",
+      "state": "Maharashtra",
+      "district": "Pune",
+      "specialties": [
+        "Cardiology",
+        "Oncology",
+        "Orthopaedics"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-206",
+      "name": "Deenanath Mangeshkar Hospital & Research Center, Pune",
+      "type": "private",
+      "state": "Maharashtra",
+      "district": "Pune",
+      "specialties": [
+        "Cardiology",
+        "General Surgery",
+        "Orthopaedics"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-301",
+      "name": "Rajiv Gandhi Government General Hospital (RGGGH), Chennai",
+      "type": "public",
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Nephrology",
+        "Oncology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-302",
+      "name": "Government Rajaji Hospital & Madurai Medical College, Madurai",
+      "type": "public",
+      "state": "Tamil Nadu",
+      "district": "Madurai",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Ophthalmology",
+        "Obstetrics and Gynaecology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-303",
+      "name": "Coimbatore Medical College Hospital (CMCH), Coimbatore",
+      "type": "public",
+      "state": "Tamil Nadu",
+      "district": "Coimbatore",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Nephrology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-304",
+      "name": "Apollo Hospitals, Greams Road, Chennai (Empanelled)",
+      "type": "private",
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "specialties": [
+        "Cardiology",
+        "Oncology",
+        "Orthopaedics",
+        "General Surgery"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-305",
+      "name": "MIOT International Hospital, Manapakkam, Chennai (Empanelled)",
+      "type": "private",
+      "state": "Tamil Nadu",
+      "district": "Chennai",
+      "specialties": [
+        "Orthopaedics",
+        "Cardiology",
+        "Nephrology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-401",
+      "name": "Osmania General Hospital, Afzal Gunj, Hyderabad",
+      "type": "public",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Nephrology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-402",
+      "name": "Gandhi Hospital & Medical College, Musheerabad, Secunderabad",
+      "type": "public",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Ophthalmology",
+        "Obstetrics and Gynaecology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-403",
+      "name": "Nizam's Institute of Medical Sciences (NIMS), Punjagutta, Hyderabad",
+      "type": "public",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "specialties": [
+        "Cardiology",
+        "Oncology",
+        "Nephrology",
+        "Orthopaedics",
+        "General Surgery"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-414",
+      "name": "Yashoda Hospitals, Alexander Road, Secunderabad (Empanelled)",
+      "type": "private",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "specialties": [
+        "Cardiology",
+        "Oncology",
+        "Orthopaedics"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-405",
+      "name": "Care Hospitals, Road No. 1, Banjara Hills, Hyderabad (Empanelled)",
+      "type": "private",
+      "state": "Telangana",
+      "district": "Hyderabad",
+      "specialties": [
+        "Cardiology",
+        "Orthopaedics",
+        "General Surgery"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-501",
+      "name": "Sawai Man Singh (SMS) Hospital & Medical College, Jaipur",
+      "type": "public",
+      "state": "Rajasthan",
+      "district": "Jaipur",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Oncology",
+        "Ophthalmology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-502",
+      "name": "Mathura Das Mathur (MDM) Hospital & SN Medical College, Jodhpur",
+      "type": "public",
+      "state": "Rajasthan",
+      "district": "Jodhpur",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-503",
+      "name": "Eternal Hospital (EHCC), Jawahar Circle, Jaipur (Empanelled)",
+      "type": "private",
+      "state": "Rajasthan",
+      "district": "Jaipur",
+      "specialties": [
+        "Cardiology",
+        "Orthopaedics",
+        "General Surgery"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-601",
+      "name": "SSKM Hospital & IPGMER, Bhowanipore, Kolkata",
+      "type": "public",
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Oncology",
+        "Nephrology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-602",
+      "name": "Calcutta National Medical College & Hospital (CNMCH), Kolkata",
+      "type": "public",
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Ophthalmology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-603",
+      "name": "AMRI Hospital, Dhakuria, Kolkata (Empanelled)",
+      "type": "private",
+      "state": "West Bengal",
+      "district": "Kolkata",
+      "specialties": [
+        "Cardiology",
+        "Orthopaedics",
+        "Oncology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-701",
+      "name": "All India Institute of Medical Sciences (AIIMS), New Delhi",
+      "type": "public",
+      "state": "Delhi",
+      "district": "New Delhi",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Oncology",
+        "Nephrology",
+        "Ophthalmology"
+      ],
+      "empanelment_active": true
+    },
+    {
+      "hospital_id": "H-702",
+      "name": "Postgraduate Institute of Medical Education & Research (PGIMER), Chandigarh",
+      "type": "public",
+      "state": "Chandigarh",
+      "district": "Chandigarh",
+      "specialties": [
+        "General Medicine",
+        "General Surgery",
+        "Orthopaedics",
+        "Cardiology",
+        "Oncology",
+        "Nephrology"
+      ],
+      "empanelment_active": true
+    }
+  ]
+}

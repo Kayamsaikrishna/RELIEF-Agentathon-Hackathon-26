@@ -1,0 +1,44 @@
+{
+  "case_id": "FX-referral",
+  "card": {
+    "name": "Asha Rao",
+    "card_id": "KA700100",
+    "dob": "1960-01-10"
+  },
+  "hospital_id": "H-005",
+  "procedure_code": "SYN-ORT-001",
+  "synthetic": true,
+  "refusal_reason": "Your file is not complete, we cannot admit under the scheme.",
+  "admission_date": "2026-10-18",
+  "as_of": "2026-10-20T12:00:00+00:00",
+  "referral": {
+    "present": "no"
+  },
+  "documents": [
+    {
+      "doc_id": "D1",
+      "kind": "card",
+      "text": "Name: Asha Rao\nCard ID: KA700100\nDOB: 1960-01-10"
+    },
+    {
+      "doc_id": "D2",
+      "kind": "id_proof",
+      "text": "Name: Asha Rao\nCard ID: KA700100\nDOB: 1960-01-10"
+    },
+    {
+      "doc_id": "D3",
+      "kind": "preauth_form",
+      "text": "Hospital: H-005\nProcedure: SYN-ORT-001"
+    },
+    {
+      "doc_id": "D4",
+      "kind": "clinical_notes",
+      "text": "Hospital: H-005\nProcedure: SYN-ORT-001"
+    },
+    {
+      "doc_id": "D5",
+      "kind": "diagnostic_report",
+      "text": "Hospital: H-005"
+    }
+  ]
+}

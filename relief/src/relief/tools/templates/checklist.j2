@@ -1,0 +1,16 @@
+Pre-authorisation checklist (prepared for facilitator review)
+Case: {{ case_id }}
+Patient: {{ patient_name }}  |  Card ID: {{ card_id }}
+Hospital: {{ hospital_name }}  |  Procedure: {{ procedure_name }}
+
+Possible issue to verify: {{ issue }}
+
+Items to complete or confirm:
+
+{% for item in items %}
+[ ] {{ loop.index }}. {{ item.text }}{% if item.rule_id %} (Rule: {{ item.rule_id }}){% endif %}
+
+{% endfor %}
+
+--------------------------------------------------------------------------------
+This checklist is prepared by RELIEF for a facilitator to check. It is not a decision about eligibility or treatment.

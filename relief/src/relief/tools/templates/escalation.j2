@@ -1,0 +1,32 @@
+To: The Grievance Nodal Officer (choose the district or state route after reading the notes below)
+Subject: Request for review of a possible blocker to cashless treatment, case {{ case_id }}
+
+PATIENT & ADMISSION DETAILS:
+- Patient Name : {{ patient_name }}
+- Card / UID   : {{ card_id }}
+- Hospital     : {{ hospital_name }}
+- Procedure    : {{ procedure_name }}
+{% if preauth_line %}- Pre-auth Info: {{ preauth_line }}
+{% endif %}- Hospital Denial Reason: {{ refusal_reason }}
+
+INCONSISTENCIES TO BE VERIFIED:
+{% for f in findings %}
+{{ loop.index }}. {{ f.wording }}
+{% endfor %}
+
+ACTION SUMMARY:
+{{ summary }}
+
+STATUTORY BASIS IN PUBLISHED RULES:
+{% for r in rules %}
+- {{ r.rule_id }}: {{ r.text }} ({{ r.source_title }}, {{ r.section }}, {{ r.date }})
+
+{% endfor %}
+
+REQUEST:
+Please review this case file and issue an administrative directive to clear this blocker and admit the patient under cashless treatment.
+
+--------------------------------------------------------------------------------
+Notes for the facilitator before sending (delete this block):
+- This letter was prepared by RELIEF. It is not an official communication until a person has checked and sent it.
+- Grievance channels in the published guidance: the grievance portal and the helpline 14555. Check which level (district or state) applies.

@@ -1,0 +1,19 @@
+{
+  "case_id": "FX-handover",
+  "card": {
+    "name": "Ravi Kumar",
+    "card_id": "KA700127",
+    "dob": "1987-01-10"
+  },
+  "hospital_id": "H-900",
+  "procedure_code": "SYN-ORT-001",
+  "synthetic": true,
+  "refusal_reason": "They said no.",
+  "admission_date": "2026-10-18",
+  "as_of": "2026-10-20T12:00:00+00:00",
+  "referral": {
+    "present": "yes",
+    "issued_on": "2026-10-08"
+  },
+  "documents": []
+}

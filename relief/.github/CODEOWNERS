@@ -1,0 +1,11 @@
+# Code owners by lane: A Kayamsaikrishna, B MRamyasreelakshmi, C rishithareddyaggannagari-cmd, D mahithap09.
+/src/relief/contracts/   @Kayamsaikrishna
+/src/relief/agent/       @Kayamsaikrishna
+/src/relief/llm/         @Kayamsaikrishna
+/src/relief/tools/       @MRamyasreelakshmi
+/data/                   @MRamyasreelakshmi
+/src/relief/app/         @rishithareddyaggannagari-cmd
+/src/relief/ui/          @rishithareddyaggannagari-cmd
+/src/relief/eval/        @mahithap09
+/fixtures/               @mahithap09
+/docs/                   @mahithap09
