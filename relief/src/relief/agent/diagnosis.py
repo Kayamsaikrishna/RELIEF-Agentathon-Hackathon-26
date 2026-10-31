@@ -83,8 +83,8 @@ def build_candidates(ctx: CaseContext) -> list[Candidate]:
     if h is not None and h.found and h.package_listed == "yes":
         if h.hospital_type == "private" and h.tier == "2A":
             cands.append(Candidate(Blocker.EMPANELMENT, 3,
-                                   f"Possible hospital-package mismatch: {h.procedure_name} is a tier 2A procedure, which the Karnataka "
-                                   f"referral study says is provided only in government hospitals, and {h.hospital_name} is private. Requires verification.",
+                                   f"Possible hospital-package mismatch: {h.procedure_name} is a tier 2A procedure, which statutory "
+                                   f"scheme guidelines reserve for government hospitals, and {h.hospital_name} is private. Requires verification.",
                                    ["WHO-2A-GOVERNMENT", "HBP-RESERVED-PUBLIC"]))
         elif h.empanelled == "no":
             why = " ".join(n for n in h.notes if "not listed" in n or "not active" in n) or "the registry does not list it for this procedure"

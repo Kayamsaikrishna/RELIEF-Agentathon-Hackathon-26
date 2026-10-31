@@ -114,8 +114,8 @@ const newId = () => `C-${new Date().toISOString().slice(2, 10).replace(/-/g, "")
 
 const blank = (): Form => ({
   case_id: newId(),
-  scheme_state: "karnataka",
-  id_type: "state_card",
+  scheme_state: "central",
+  id_type: "pmjay_id",
   name: "",
   card_id: "",
   family_id: "",

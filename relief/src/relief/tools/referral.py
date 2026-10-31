@@ -1,4 +1,4 @@
-"""Referral check against the Karnataka referral rules (WHO 2025) and the benefit-package rules.
+"""Referral check against national NHA and state scheme referral guidelines and benefit-package rules.
 
 Conservative by design: where the source documents do not establish a rule, the answer is "unknown".
 """

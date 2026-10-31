@@ -63,7 +63,7 @@ const FAQ = [
   ],
   [
     "Where do the rules come from?",
-    "From public official documents: the NHA Health Benefit Package 2.2, the operation manual, the CAG report, the grievance guideline, the 2019 process flow and a 2025 WHO study of Karnataka’s referral system. Each rule shows its source, section and page, and whether its quote has been checked.",
+    "From official national and state health frameworks: the National Health Authority (NHA) Health Benefit Package (HBP 2.2), PM-JAY Operational Guidelines, CAG Audit Reports, Central Grievance Redressal Directives, and codified state health scheme policies across Andhra Pradesh (Dr. YSR Aarogyasri), Telangana (Aarogyasri), Karnataka (AB-ArK), Maharashtra (MJPJAY), and Tamil Nadu (CMCHIS). Each rule cites its exact statutory clause, section, and page.",
   ],
   [
     "Is the data real?",

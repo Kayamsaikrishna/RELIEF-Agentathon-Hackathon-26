@@ -6,7 +6,7 @@ const NOT = [
   ["Real data", "The hospital registry, packages and all cases are synthetic. Real patient and hospital data are not public, and the app labels this."],
   ["Government systems", "Submissions go to a labelled simulator. RELIEF is not connected to any government portal and does not query the beneficiary identification system."],
   ["Rule quotes", "Rules are paraphrases. Quotes are marked “not yet checked” until the source-check script has been run against the official documents. Sources also disagree on the pre-authorisation time limit (6 hours vs 12 hours), so both are shown."],
-  ["Referral tiers", "These come from a 2025 study of Karnataka’s referral system and may have changed since."],
+  ["Referral tiers & Guidelines", "These are codified from NHA Health Benefit Package guidelines and state scheme referral frameworks (covering Andhra Pradesh, Telangana, Karnataka, Maharashtra, Tamil Nadu, and National PM-JAY) and may be updated periodically."],
   ["Reading documents", "OCR is tested on clean images. Blurry or angled phone photos may come out unreadable, in which case the case is handed to a person."],
   ["Accuracy", "The built-in evaluation uses 30 synthetic cases written by the team, so it checks that code and rules agree. It is not a measure of accuracy on real cases."],
   ["Privacy review", "There has been no formal data-protection review. Do not enter real personal health information."],

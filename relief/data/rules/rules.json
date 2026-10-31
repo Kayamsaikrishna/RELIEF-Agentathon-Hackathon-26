@@ -284,7 +284,7 @@
     "section": "Section 3.3",
     "page": "",
     "quote": "2A procedures can be provided only in government hospitals.",
-    "text": "In Karnataka, simple secondary (tier 2A) procedures can be provided only in government hospitals.",
+    "text": "Under state referral frameworks and HBP guidelines, simple secondary (tier 2A) procedures can be provided only in government hospitals.",
     "applies_to": [
       "EMPANELMENT"
     ],
@@ -300,7 +300,7 @@
     "section": "Section 3.3",
     "page": "",
     "quote": "2B and 3A procedures should be provided preferentially in government hospitals.",
-    "text": "In Karnataka, complex secondary (2B) and tertiary (3A) procedures are routed through the referral system and should be provided preferentially in government hospitals.",
+    "text": "Under state referral frameworks and HBP guidelines, complex secondary (2B) and tertiary (3A) procedures are routed through the referral system and should be provided preferentially in government hospitals.",
     "applies_to": [
       "REFERRAL"
     ],
@@ -316,7 +316,7 @@
     "section": "Section 3.3",
     "page": "",
     "quote": "There are a further 171 emergency procedures which require no referral",
-    "text": "In Karnataka, emergency (tier 4A) procedures do not require a referral.",
+    "text": "Under emergency protocol and HBP guidelines, emergency (tier 4A) procedures do not require a referral.",
     "applies_to": [
       "REFERRAL"
     ],
@@ -348,7 +348,7 @@
     "section": "Section 3.4",
     "page": "",
     "quote": "The referral letter has a validity of 30 days from the date of referral",
-    "text": "A referral letter issued through the Karnataka online referral system is valid for 30 days from the date of referral.",
+    "text": "A referral letter issued through the public online referral system is valid for 30 days from the date of referral.",
     "applies_to": [
       "REFERRAL"
     ],

@@ -84,7 +84,7 @@ export default function PrintReport({ res }: PrintReportProps) {
               <th className="p-th">Beneficiary Card / UID</th>
               <td className="p-td mono"><b>{caseIn.card.card_id}</b> ({caseIn.card.id_type || "State Health Card"})</td>
               <th className="p-th">Jurisdiction / State</th>
-              <td className="p-td">{caseIn.card.state || "Karnataka"}</td>
+              <td className="p-td">{caseIn.card.state || "National Pool (AB-PMJAY)"}</td>
             </tr>
             <tr>
               <th className="p-th">Admitting Facility</th>
