@@ -29,21 +29,31 @@ export default function AppLayout() {
     <div className="shell">
       {open && <div className="scrim" onClick={() => setOpen(false)} />}
       <aside className={`side ${open ? "open" : ""}`} aria-label="Sidebar">
-        <Brand to="/app" />
-        <div className="grp">Workspace</div>
-        {link("/app", <LayoutDashboard size={19} />, "Dashboard", undefined, true)}
-        {link("/app/cases/new", <PlusCircle size={19} />, "New case")}
-        {link("/app/cases", <FolderOpen size={19} />, "Cases", badge.approve)}
-        {link("/app/reminders", <Bell size={19} />, "Reminders", badge.rem)}
-        {user.role === "admin" && <>
-          <div className="grp">Administration</div>
-          {link("/admin", <Activity size={19} />, "Overview", undefined, true)}
-          {link("/admin/users", <Users size={19} />, "Users")}
-          {link("/admin/rules", <BookOpen size={19} />, "Rules")}
-          {link("/admin/registry", <Database size={19} />, "Registry")}
-          {link("/admin/audit", <ScrollText size={19} />, "Audit log")}
-          {link("/admin/system", <Server size={19} />, "System")}
-        </>}
+        <Brand to={user.role === "admin" ? "/admin" : "/app"} />
+        {user.role === "admin" ? (
+          <>
+            <div className="grp">Administration</div>
+            {link("/admin", <Activity size={19} />, "Overview", undefined, true)}
+            {link("/admin/users", <Users size={19} />, "Users")}
+            {link("/admin/rules", <BookOpen size={19} />, "Rules")}
+            {link("/admin/registry", <Database size={19} />, "Registry")}
+            {link("/admin/audit", <ScrollText size={19} />, "Audit log")}
+            {link("/admin/system", <Server size={19} />, "System")}
+
+            <div className="grp">Case Oversight</div>
+            {link("/app/cases", <FolderOpen size={19} />, "All Cases", badge.approve)}
+            {link("/app", <LayoutDashboard size={19} />, "Claim Analytics", undefined, true)}
+            {link("/app/reminders", <Bell size={19} />, "Reminders", badge.rem)}
+          </>
+        ) : (
+          <>
+            <div className="grp">Arogya Mitra Desk</div>
+            {link("/app", <LayoutDashboard size={19} />, "Dashboard", undefined, true)}
+            {link("/app/cases/new", <PlusCircle size={19} />, "New Case Intake")}
+            {link("/app/cases", <FolderOpen size={19} />, "My Cases", badge.approve)}
+            {link("/app/reminders", <Bell size={19} />, "Reminders", badge.rem)}
+          </>
+        )}
         <div className="who">
           <div className="avatar">{initials(user.name)}</div>
           <div style={{ minWidth: 0 }}><b>{user.name}</b><span>{user.role === "admin" ? "Administrator" : "Facilitator"}</span></div>

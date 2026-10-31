@@ -64,6 +64,10 @@ class OllamaClient:
             return False, f"Cannot reach the model server at {self.host}: {exc}"
         names = {getattr(m, "model", None) or (m.get("model") if isinstance(m, dict) else None) for m in listing.get("models", listing.models if hasattr(listing, "models") else [])}
         if self.model not in names and f"{self.model}:latest" not in names:
+            fallback = next((m for m in ("qwen2.5:7b", "qwen3:8b", "llama3.1:8b", "gemma3:4b") if m in names or f"{m}:latest" in names), None)
+            if fallback:
+                self.model = fallback
+                return True, f"Model {self.model} is available at {self.host} (auto-detected from installed models)"
             return False, f"Model {self.model} is not installed. Run: ollama pull {self.model}"
         return True, f"Model {self.model} is available at {self.host}"
 

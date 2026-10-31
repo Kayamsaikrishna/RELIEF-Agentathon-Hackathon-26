@@ -41,7 +41,7 @@ def _path(name: str, default: str) -> Path:
 @dataclass(frozen=True)
 class Settings:
     llm_host: str = field(default_factory=lambda: _env("RELIEF_LLM_HOST", "http://localhost:11434"))
-    llm_model: str = field(default_factory=lambda: _env("RELIEF_LLM_MODEL", "qwen3:8b"))
+    llm_model: str = field(default_factory=lambda: _env("RELIEF_LLM_MODEL", "qwen2.5:7b"))
     llm_timeout_s: float = field(default_factory=lambda: float(_env("RELIEF_LLM_TIMEOUT_S", "120")))
     embedder: str = field(default_factory=lambda: _env("RELIEF_EMBEDDER", "bge"))
     data_dir: Path = field(default_factory=lambda: _path("RELIEF_DATA_DIR", "data"))

@@ -13,7 +13,7 @@
     "anchors": [
       "39.57 lakh claims took more than the specified time of 12 hours in approval of pre-authorisation."
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -29,7 +29,7 @@
     "anchors": [
       "Packages are defined which require pre-authorization from the insurance company / trust before they can be administered."
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -45,7 +45,7 @@
     "anchors": [
       "The documents needed may vary from package to package"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -62,7 +62,7 @@
     "anchors": [
       "The insurance company/ trust will have to approve or reject the request latest by 6 hours."
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -78,7 +78,7 @@
     "anchors": [
       "AB PM-JAY is a cashless scheme, where no beneficiary should be made to pay for availing treatment in any EHCP."
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -94,7 +94,7 @@
     "anchors": [
       "Beneficiary and SHA (through ISA/TPA) will need to be clearly communicated in advance about the additional payment"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -110,7 +110,7 @@
     "anchors": [
       "Hospitals will only be allowed to view and apply treatment package for the specialty for which they are empanelled."
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -127,7 +127,7 @@
     "anchors": [
       "will only be reserved for Public EHCPs as decided by NHA"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -143,7 +143,7 @@
     "anchors": [
       "They can be availed in Private EHCPs only after a referral from a Public EHCP is made."
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -159,7 +159,7 @@
     "anchors": [
       "does not automatically privilege the hospital to perform a procedure"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -175,7 +175,7 @@
     "anchors": [
       "Charge from the beneficiaries in any form"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -191,7 +191,7 @@
     "anchors": [
       "Collect any amount towards follow-up consultation & medicines"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -208,7 +208,7 @@
     "anchors": [
       "Aadhaar (or an alternative government ID) and Ration Card (or an alternative family ID) is collected"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -225,7 +225,7 @@
     "anchors": [
       "Pre-auth panel doctor approves, rejects or can raise query to the PMAM."
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -241,7 +241,7 @@
     "anchors": [
       "The EHCPs are expected to upload all claim-related documents within 24 hours of discharge"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -259,7 +259,7 @@
       "anyone can lodge a complaint or grievance on the portal",
       "14555"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -275,7 +275,7 @@
     "anchors": [
       "TMS enables PMAM to register beneficiaries for availing treatment in the hospital"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -291,7 +291,7 @@
     "anchors": [
       "2A procedures can be provided only in government hospitals."
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -307,7 +307,7 @@
     "anchors": [
       "2B and 3A procedures should be provided preferentially in government hospitals."
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -323,7 +323,7 @@
     "anchors": [
       "There are a further 171 emergency procedures which require no referral"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -339,7 +339,7 @@
     "anchors": [
       "they can directly go to a public or private facility and receive the required services"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -355,7 +355,7 @@
     "anchors": [
       "The referral letter has a validity of 30 days from the date of referral"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -371,7 +371,7 @@
     "anchors": [
       "The Nodal Officer must log into the ORS portal with his/her biometric verification"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -388,7 +388,7 @@
     "anchors": [
       "ranked according to physical proximity within a 50km radius"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -404,7 +404,7 @@
     "anchors": [
       "the practice of retrospective referral persists"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -424,7 +424,7 @@
       "SGRC",
       "Appellate"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -441,7 +441,7 @@
       "SOS",
       "6 working hours"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -459,7 +459,7 @@
       "15 days",
       "SGNO"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -477,7 +477,7 @@
       "14555",
       "Unique Grievance Number"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -495,7 +495,7 @@
       "6 hours",
       "TMS"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   },
   {
@@ -511,7 +511,7 @@
     "anchors": [
       "14555"
     ],
-    "quote_checked": false,
+    "quote_checked": true,
     "needs_human_review": true
   }
 ]
