@@ -1,6 +1,6 @@
 # RELIEF
 
-An agent that helps a facilitator (for example an Arogya Mitra) find **why cashless treatment under Ayushman Bharat PM-JAY / Arogya Karnataka was blocked**, checks the records and rules, cites the rule, prepares the fix, and **waits for a person to approve every action**.
+An agent that helps a facilitator (for example an Arogya Mitra) find **why cashless treatment under Ayushman Bharat PM-JAY and state schemes (Dr. YSR Aarogyasri, Aarogyasri, AB-ArK, MJPJAY, CMCHIS) was blocked**, checks the records and rules, cites the rule, prepares the fix, and **waits for a person to approve every action**.
 
 It gives no medical advice, makes no eligibility decisions and never promises treatment. Every finding is worded "Possible …, requires verification". If a message suggests an emergency, it stops and shows a fixed notice (call 112 / go to the nearest hospital).
 
@@ -12,7 +12,7 @@ intake → choose_tool ⇄ run_tool → retrieve → diagnose → plan → verif
 ```
 
 * **Code decides facts**: name/date/id comparison, hospital empanelment, referral tier and 30-day validity, document completeness, the pre-authorisation clock (reported against both the 6-hour HBP 2.2 and 12-hour CAG limits, because the sources differ), and every citation.
-* **The local model (Qwen3 on Ollama) only does language**: orders the checks (all applicable checks always run), ranks candidate blockers when two or more are strong, writes one summary sentence. Replies are forced into a JSON schema and validated. If the model is down or wrong, a rule-based fallback is used and shown in the trace.
+* **The local model (Qwen2.5 / Qwen3 on Ollama) only does language**: orders the checks (all applicable checks always run), ranks candidate blockers when two or more are strong, writes one summary sentence. Replies are forced into a JSON schema and validated. If the model is down or wrong, a rule-based fallback is used and shown in the trace.
 * **Verifier (code)**: every cited rule/evidence id exists, required checklist items are present, letters contain the case facts, no eligibility verdicts, guarantees or medical advice. Failing plans are revised twice, then handed to a person.
 * **Human gate**: LangGraph `interrupt()`; approve, edit or reject. Nothing is executed before approval; state survives restarts (SQLite checkpoints).
 
@@ -24,7 +24,7 @@ You need Python 3.11+, Node 18+ (only to build the web app once), Ollama, and Te
 
 ```bash
 pip install -e ".[dev]"                 # backend
-cp .env.example .env                    # Windows: copy .env.example .env  -> then set RELIEF_LLM_MODEL to a model from `ollama list`
+cp .env.example .env                    # Windows: copy .env.example .env  -> set RELIEF_LLM_MODEL to qwen2.5:7b
 ollama pull nomic-embed-text            # rule-search embeddings (skip if you already have it)
 python scripts/ollama_check.py          # model, structured call, embedder: all OK?
 python -m relief.app.cli create-user --email you@example.org --name "Your Name" --role admin   # asks for a password
@@ -37,7 +37,7 @@ Create facilitator accounts from the Admin → Users page.
 
 Development with hot reload: run the backend as above and `cd frontend && npm run dev`, then open http://localhost:5173.
 
-Other commands: `python -m pytest` (47 tests) · `python -m relief.eval.run_eval` · `python -m relief.agent.run fixtures/case_referral_input.json --no-llm --approve`.
+Other commands: `python -m pytest` (48 tests) · `python -m relief.eval.run_eval` · `python -m relief.agent.run fixtures/case_referral_input.json --no-llm --approve`.
 
 No model running? The agent still works on its rule-based path (the trace says so). With `RELIEF_EMBEDDER=hashing` no embedding model is needed either.
 
