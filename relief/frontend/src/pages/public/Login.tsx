@@ -220,7 +220,31 @@ export default function Login() {
           <div className="login-footer-hint">
             {mode === "signin" ? (
               <>
-                <span>Verified Account: <code>saikrishna@gmail.com</code></span>
+                <div style={{ display: "flex", gap: "8px", justifyContent: "center", marginBottom: "12px", flexWrap: "wrap" }}>
+                  <button
+                    type="button"
+                    className="btn btn-ghost btn-sm"
+                    style={{ border: "1px solid var(--border)", fontSize: "12px", borderRadius: "6px", background: "var(--card)" }}
+                    onClick={() => {
+                      setEmail("saikrishna@gmail.com");
+                      setPw("Relief2026!");
+                    }}
+                  >
+                    👤 Demo Facilitator
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-ghost btn-sm"
+                    style={{ border: "1px solid var(--border)", fontSize: "12px", borderRadius: "6px", background: "var(--card)", color: "var(--orange-600)", fontWeight: 600 }}
+                    onClick={() => {
+                      setEmail("admin@relief.org");
+                      setPw("Relief2026!");
+                    }}
+                  >
+                    🛡️ Demo Admin Profile
+                  </button>
+                </div>
+                <span>Admin Login: <code>admin@relief.org</code> · Facilitator: <code>saikrishna@gmail.com</code></span>
                 <p>100% offline local model · Codified NHA & PM-JAY scheme engine.</p>
               </>
             ) : (
